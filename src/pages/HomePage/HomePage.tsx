@@ -1,8 +1,6 @@
-import { CardsContainer } from "../../components";
+import { CardsContainer, ErrorComponent } from "../../components";
 import { useContext } from "react";
-
 import { AppContext } from "../../store/app-context";
-import { Typography } from "@mui/material";
 
 const HomePage = () => {
   const { characterArr, getCharacterDetails, bookmarkCharacter, searchError } =
@@ -16,12 +14,7 @@ const HomePage = () => {
           onBookmarkPokemon={bookmarkCharacter}
         />
       ) : (
-        <Typography
-          variant="h4"
-          style={{ margin: "200px auto", width: "fit-content" }}
-        >
-          No characters found
-        </Typography>
+        <ErrorComponent />
       )}
     </>
   );

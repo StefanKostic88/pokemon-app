@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+Project Setup Description:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To set up the project, begin by running the following commands in your terminal or command prompt:
 
-## Available Scripts
+1. Open your project directory and run `npm install` to fetch and install all the required dependencies. This command will scan the project's package.json file and download the necessary packages from the npm registry.
 
-In the project directory, you can run:
+Once the installation process completes successfully, you'll have all the dependencies needed to run the project.
 
-### `npm start`
+2. After installing the dependencies, execute `npm start` in the terminal. This command initiates the project and launches it on port 3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Once the project starts running, you can access it by navigating to `http://localhost:3000` in your web browser. This is the default URL where the project will be served locally.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+By following these steps, you'll have successfully set up the project, installed its dependencies, and started it on port 3000. Now you can begin working on your project and explore its functionalities.
 
-### `npm test`
+Project Overview:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project utilizes several libraries to enhance its functionality and provide a seamless user experience. The key libraries employed in this project are MUI, Styled Components, TypeScript, and React Router.These libraries contribute to building a modern, scalable, and user-friendly project.
 
-### `npm run build`
+The project is built upon React Router. It incorporates multiple pages, including a Home page, Pokemon page for displaying individual Pokemon details, and an Error page to handle situations where fetch requests fail or unsupported URLs are accessed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Home page serves as the landing page of the application, providing an overview or introduction to the project. Users can navigate to different sections of the application, including the Pokemon page, from the Home page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The Pokemon page is designed to display detailed information about a specific Pokemon. It leverages the data fetched from an external API or a local data source to populate the page with relevant details, such as the Pokemon's name, image, type, abilities, and other characteristics. Users can explore various Pokemon by accessing their respective pages through dynamic routing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To handle potential errors, such as failed fetch requests or accessing unsupported URLs, the project incorporates an Error page. This page acts as a fallback route and gracefully handles unexpected scenarios. It may display an error message, a friendly notification, or suggest alternative actions to the users, helping them navigate back to a valid section of the application.
 
-### `npm run eject`
+Features:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The project incorporates a bookmark feature for Pokemon cards, allowing users to save their favorite cards for quick access later. Users can mark specific Pokemon cards as bookmarks, enabling them to easily revisit those cards without searching for them again.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Furthermore, the project provides a powerful search functionality for finding Pokemon based on three parameters: from A to Z, from Z to A, and the default search. Users can choose their preferred sorting order and retrieve the corresponding Pokemon results accordingly. This feature enhances the user experience by providing flexible search options.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To handle a large number of Pokemon cards, the landing page and search results utilize functional pagination. This means that the cards are divided into multiple pages, and users can navigate through the pages to view more Pokemon cards. This approach improves performance and provides a more organized browsing experience.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+In cases where the searched Pokemon are not found or do not match the specified criteria, the project incorporates an error component. This component displays a user-friendly message or notification, informing users that no matching Pokemon were found. It allows users to adjust their search parameters or try again with different criteria.
 
-## Learn More
+When a user clicks the "More" button on a Pokemon card, it triggers navigation to the Pokemon details page. This page provides comprehensive information about the selected Pokemon, including its name, image, type, abilities, and other relevant details. Users can explore additional details and characteristics of the Pokemon on this page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Lastly, the project includes an error page that users can access in case of any unexpected errors or when navigating to unsupported URLs. This error page provides a navigational link to return to the initial state of the application, resetting the app to its default settings. It ensures a smooth and error-tolerant user experience by gracefully handling any unforeseen errors.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+By combining the bookmark feature, flexible search parameters, functional pagination, error handling components, and Pokemon details page, the project offers a comprehensive and user-friendly platform for exploring, bookmarking, and learning about Pokemon cards. It aims to provide an engaging and intuitive experience for Pokemon enthusiasts.

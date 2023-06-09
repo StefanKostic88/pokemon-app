@@ -29,6 +29,7 @@ const PokemonCard: FC<Props> = ({
         image={img ? img : noImage}
         title={name}
       />
+
       <CardContent>
         <Typography
           gutterBottom

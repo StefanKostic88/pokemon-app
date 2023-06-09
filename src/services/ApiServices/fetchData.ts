@@ -4,7 +4,6 @@ import {
   PokemonDetailsInput,
   PokemonPageDetailsInput,
   PokemonInfoPageInterface,
-  FetchInputData,
 } from "../Utils/interfaces";
 import PokemonPageInfoModel from "../Models/pokemonePageInfoModel";
 
@@ -26,7 +25,6 @@ const getPokemonDatails = async (pokeName: CharacterNames) => {
       img,
       isBookmarked: false,
     };
-
     return pokemonData;
   } catch (error) {
     throw error;
@@ -57,7 +55,6 @@ export const getCharacters = async (
       });
 
     const maxPages = Math.ceil(count / limit);
-
     return { newData, maxPages };
   } catch (error) {
     throw error;
@@ -81,9 +78,6 @@ export const getPokemonPageInfo = async (pokemonId: string | undefined) => {
       base_experience,
       height,
     }: PokemonPageDetailsInput = await res.json();
-
-    // const data = await res.json();
-    // console.log(data);
 
     const pokemonInfoPageObj: PokemonInfoPageInterface =
       new PokemonPageInfoModel(

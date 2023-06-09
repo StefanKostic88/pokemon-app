@@ -46,7 +46,7 @@ const App: React.FC = () => {
       setLastPage(() => maxPages);
     } catch (error) {
       setCharacterArr(() => null);
-      setHasError(() => false);
+      setHasError(() => true);
     }
   };
 
@@ -138,6 +138,7 @@ const App: React.FC = () => {
           compareCurArrAndUpdate(newData, maxPages);
         }
       } catch (error) {
+        console.log(error);
         setCharacterArr(() => null);
         setHasError(() => true);
       }
@@ -150,8 +151,6 @@ const App: React.FC = () => {
       resetPage();
     }
   }, [isSearched, searchedPokemon]);
-
-  console.log();
 
   return (
     <AppContextProvider

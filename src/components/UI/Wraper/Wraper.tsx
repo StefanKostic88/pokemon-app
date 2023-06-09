@@ -1,6 +1,6 @@
 import { styled } from "@mui/material/styles";
 import { Container } from "@mui/material";
-// - ${theme.mixins.toolbar.minHeight}px
+
 const WraperStyled = styled(Container)(({ theme }) => {
   return {
     maxWidth: theme.breakpoints.values.lg,
