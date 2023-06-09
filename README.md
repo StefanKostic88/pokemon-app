@@ -12,6 +12,8 @@ Once the project starts running, you can access it by navigating to `http://loca
 
 By following these steps, you'll have successfully set up the project, installed its dependencies, and started it on port 3000. Now you can begin working on your project and explore its functionalities.
 
+The live version of the app is available at https://prismatic-puppy-80db20.netlify.app/. The project is hosted on Netlify.
+
 Project Overview:
 
 The project utilizes several libraries to enhance its functionality and provide a seamless user experience. The key libraries employed in this project are MUI, Styled Components, TypeScript, and React Router.These libraries contribute to building a modern, scalable, and user-friendly project.
